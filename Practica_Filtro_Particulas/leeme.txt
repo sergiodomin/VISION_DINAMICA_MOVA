@@ -1,0 +1,24 @@
+En este archivo se explica como ejecutar el archivo FP.py
+
+Para ejecutar dicho archivo, un fichero python, podemos ir hasta una terminal e introducir el siguiente comando:
+
+	python FP.py --path_im [directorio con las imágenes de entrada] --path_out [directorio para las imágenes de salida]
+
+Donde [directorio con las imágenes de entrada] se refiere al directorio donde se encuentran el conjunto de imágenes de la secuencia.
+
+Y [directorio para las imágenes de salida] se refiere al directorio donde se escribirán las imágenes de salida así como dos vídeos con la secuencia del filtro de partículas en modo vídeo.
+
+Aquí un ejemplo de cómo se ejecuta:
+
+python FP.py --path_im D:/Google Drive/MOVA/2_Cuatri/Dinamica/Practicas/P2/trunk/Practica_Filtro_Particulas/SecuenciaPelota --path_out D:/Google Drive/MOVA/2_Cuatri/Dinamica/Practicas/P2/trunk/Practica_Filtro_Particulas/final
+
+Otra opción para ejecutar dicho fichero es mediante algún IDE de Python, mediante "run". En este caso habría que modificar a mano las rutas 
+
+    ############################################################################
+    #   Rutas a modificar en caso de que no se ejecute por línea de comandos   #
+    #           Leer fichero leeme.txt para mayor informacion                 #
+    ap.add_argument('--path_im', default='D:/Google Drive/MOVA/2_Cuatri/Dinamica/Practicas/P2/trunk/Practica_Filtro_Particulas/SecuenciaPelota')
+    ap.add_argument('--path_out', default='D:/Google Drive/MOVA/2_Cuatri/Dinamica/Practicas/P2/trunk/Practica_Filtro_Particulas/out')
+    #                                                                          #
+    #                                                                          #
+    ############################################################################
